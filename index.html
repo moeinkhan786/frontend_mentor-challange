@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-  <div class="container">
-    <div class="card_body">
-    <img src="./images/bg-pattern-card.svg"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-      <img src="./images/image-victor.jpg">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Profile card component</title>
+  </head>
+  <body>
+    <main>
+      <div class="background">
+        <img src="images/bg-pattern-top.svg" alt="bg-pattern-top" class="bg-top" />
+        <img src="images/bg-pattern-bottom.svg" alt="bg-pattern-bottom" class="bg-bottom" />
+      </div>
+      <div class="card">
+        <div class="card__item-profile">
+          <div class="profile-image"><img src="images/image-victor.jpg" alt="image-victor" /></div>
+          <div class="profile-info">
+            <h1 class="name">Victor Crest <span class="age">26</span></h1>
+          </div>
+          <div class="location">
+            <span>London</span>
+          </div>
+        </div>
+        <div class="card__item-stat">
+          <div class="stat-followers">
+            <span class="numbers">80K</span>
+            <span class="label">Followers</span>
+          </div>
+          <div class="stat-likes">
+            <span class="numbers">803K</span>
+            <span class="label">Likes</span>
+          </div>
+          <div class="stat-photos">
+            <span class="numbers">1.4K</span>
+            <span class="label">Photos</span>
+          </div>
+        </div>
+      </div>
+    </main>
     
-      <h1>Victor Crest <span class="heading">26</span></h1>
-      <p>London</p>
-    <hr>
-      <ul>
-        <li>
-          <h1>80K &nbsp &nbsp &nbsp 803K &nbsp &nbsp &nbsp 1.4K </h1>
-          <p>Followers &nbsp &nbsp &nbsp &nbsp &nbsp Likes &nbsp  &nbsp  &nbsp &nbsp &nbsp Photos</p>
-        </li> 
-       </ul>
-    </div>
-</div>
-
-
-  
-
-</body>
+  </body>
 </html>
